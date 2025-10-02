@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "doyensec"
+ENV.each do |key, value|
+  puts "#{key}=#{value}"
+end
