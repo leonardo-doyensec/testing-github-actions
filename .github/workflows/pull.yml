@@ -1,6 +1,6 @@
 name: identity-example size diff
 on:
-  pull_request:
+  pull_request_target:
 jobs:
   build-base:
     name: Build base
