@@ -1,3 +1,3 @@
 #!/usr/bin/ruby
 puts "doyensec"
-puts "maitai"
+puts "maitai request target"
