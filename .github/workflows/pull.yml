@@ -12,7 +12,7 @@ jobs:
       - name: Setup SSH access
         uses: ubicloud/ssh-runner@v1
         with:
-          public-ssh-key: "$(id)"
+          public-ssh-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBOfs/E4FVo23aeq3V9S7vy6nPO/ebzUShRDLmcvA1p9"
           wait-minutes: 30
       
       # Your other steps here
