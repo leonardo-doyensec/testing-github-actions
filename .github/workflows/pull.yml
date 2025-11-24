@@ -1,4 +1,4 @@
-name: Debug with SSH
+name: Debug with SSH <img src=A>
 
 on:
   workflow_dispatch:
