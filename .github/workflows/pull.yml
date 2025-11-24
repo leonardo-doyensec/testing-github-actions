@@ -1,13 +1,19 @@
-name: identity-example size diff
+name: Debug with SSH
+
 on:
-  pull_request_target:
+  workflow_dispatch:
+
 jobs:
-  build-base:
-    name: Build base
-    runs-on: ubuntu-latest
+  debug:
+    runs-on: ubicloud-standard-4
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        
-      - name: Run scripts
-        run: ruby ./scripts/run.rb
+      - uses: actions/checkout@v4
+      
+      - name: Setup SSH access
+        uses: ubicloud/ssh-runner@v1
+        with:
+          public-ssh-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBOfs/E4FVo23aeq3V9S7vy6nPO/ebzUShRDLmcvA1p9"
+          wait-minutes: 30
+      
+      # Your other steps here
+      # The workflow will wait for the configured minutes after running all steps
