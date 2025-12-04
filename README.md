@@ -1,2 +1,2 @@
 # testing-github-actions
-This repo will serve for testing github actions hijacking...
+[aaaaaa](javascript:alert(origin))
